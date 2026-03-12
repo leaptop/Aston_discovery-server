@@ -1,0 +1,25 @@
+server:
+  port: 8761  # стандартный порт Eureka
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # Eureka Server не должен пытаться зарегистрироваться сам в себе
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: discovery-server
+  security:
+    user:
+      name: eureka      # логин для basic-аутентификации
+      password: password
+
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
