@@ -30,10 +30,10 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <!-- Базовая защита эндпоинтов (для /eureka) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <dependencyManagement>
